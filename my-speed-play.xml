@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>speed-play</Name>
+  <Repository>unraiders/speed-play</Repository>
+  <Registry>https://hub.docker.com/r/unraiders/speed-play/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/unraiders/speed-play</Support>
+  <Overview>Control velocidad upload / download en QBittorrent mediante API de Tautulli de reproducciones en Plex.</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/unraiders/speed-play/master/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683840000</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Config Name="Tautulli IP" Target="TAUTULLI_IP" Default="" Mode="" Description="Your Tautulli server IP" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Tautulli Port" Target="TAUTULLI_PORT" Default="" Mode="" Description="Your Tautulli server port" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Tautulli API Key" Target="TAUTULLI_API_KEY" Default="" Mode="" Description="Your Tautulli API key" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="qBittorrent IP" Target="QBITTORRENT_IP" Default="" Mode="" Description="Your qBittorrent WebUI IP" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="qBittorrent Port" Target="QBITTORRENT_PORT" Default="" Mode="" Description="Your qBittorrent WebUI port" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="qBittorrent Username" Target="QBITTORRENT_USER" Default="" Mode="" Description="Your qBittorrent WebUI username" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="qBittorrent Password" Target="QBITTORRENT_PASSWORD" Default="" Mode="" Description="Your qBittorrent WebUI password" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Wait Time" Target="WAIT_TIME" Default="10" Mode="" Description="Time in seconds before disabling alternative speed" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Check Interval" Target="WAIT_CHECK" Default="20" Mode="" Description="Time in seconds between playback checks" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Debug Mode" Target="DEBUG_MODE" Default="0" Mode="" Description="Set to 1 for detailed logging, 0 for basic information" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Madrid" Mode="" Description="Your timezone" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
