@@ -1,0 +1,17 @@
+services:
+  speed-play:
+    image: unraiders/speed-play:latest
+    container_name: speed-play
+    environment:
+      - TAUTULLI_IP=${TAUTULLI_IP} 
+      - TAUTULLI_PORT=${TAUTULLI_PORT}
+      - TAUTULLI_API_KEY=${TAUTULLI_API_KEY}
+      - QBITTORRENT_IP=${QBITTORRENT_IP}
+      - QBITTORRENT_PORT=${QBITTORRENT_PORT}
+      - QBITTORRENT_USER=${QBITTORRENT_USER}
+      - QBITTORRENT_PASSWORD=${QBITTORRENT_PASSWORD}
+      - WAIT_TIME=${WAIT_TIME}
+      - WAIT_CHECK=${WAIT_CHECK}
+      - DEBUG_MODE=${DEBUG_MODE:-0}
+      - TZ=Europe/Madrid
+    restart: unless-stopped
